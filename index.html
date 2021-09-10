@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search With JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="search-icon.jpg" type="image/icon type">
+
+</head>
+<style>
+    #mydata {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+.bgf{
+    background-color: #160f35;
+
+}
+.character {
+    list-style-type: none;
+    background-color: #08db83;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image';
+    text-align: left;
+}
+
+.character > h4 {
+    grid-area: name;
+    margin-bottom: 0px;
+}
+
+.character > p {
+    grid-area: house;
+    margin: 0;
+    margin-top: -18px;
+}
+
+.character > img {
+    max-height: 100px;
+    grid-area: image;
+}
+
+</style>
+<body class="bg-dark">
+    <center><h2 class="mt-2 text-white">Search Harry Potter Characters</h2></center>
+    <div class="container mt-3 mb-4">
+        <div class="input-group rounded mb-3">
+            <input type="search" class="rounded-pill form-control rounded border-2 border-success " placeholder="Search here..." id="search" aria-label="Search"
+              aria-describedby="search-addon" />          
+          </div>
+      
+         <ul id="mydata"></ul>
+</div>
+<div class="bgf">
+    <footer><center class="text-white">shaonahmed703@gmail.com</center></footer>
+</div>
+ 
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
